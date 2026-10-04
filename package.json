@@ -35,6 +35,6 @@
     "node": ">=18"
   },
   "dependencies": {
-    "encarapi": "^1.0.0"
+    "encarapi": "https://github.com/ThatMojo/encarapi-node/archive/refs/heads/main.tar.gz"
   }
 }

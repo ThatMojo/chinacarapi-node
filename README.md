@@ -16,7 +16,7 @@ without scrapers, captchas, proxies or Chinese-language parsing.
 ## Install
 
 ```bash
-npm install chinacarapi
+npm install github:ThatMojo/chinacarapi-node
 ```
 
 Requires Node.js 18+. TypeScript types included.
