@@ -16,10 +16,14 @@ without scrapers, captchas, proxies or Chinese-language parsing.
 ## Install
 
 ```bash
-npm install github:ThatMojo/chinacarapi-node
+npm install chinacarapi
 ```
 
-Requires Node.js 18+. No dependencies.
+Requires Node.js 18+. TypeScript types included.
+
+This package is the China entry point of [`encarapi`](https://www.npmjs.com/package/encarapi),
+the official client for Korean **and** Chinese used car data. Need both markets? Use
+`new EnCarAPI(key)` with `client.korea` and `client.china` (exported here as well).
 
 ## Quick start
 

@@ -1,16 +1,40 @@
 {
   "name": "chinacarapi",
-  "version": "0.1.0",
-  "description": "Official Node.js client for ChinaCarAPI: Chinese used-car data from Dongchedi and Che168 as one REST API, in English.",
+  "version": "1.0.0",
+  "description": "Official Node.js client for ChinaCarAPI: Chinese used-car data from Dongchedi and Che168 in English. China entry point of the encarapi package.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
-  "files": ["src"],
-  "scripts": { "test": "node test/smoke.js" },
-  "keywords": ["china car api", "chinese car api", "dongchedi api", "che168 api", "懂车帝 api", "车168 api", "chinese used car data", "china car export", "vehicle data api"],
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node test/smoke.js"
+  },
+  "keywords": [
+    "china car api",
+    "chinese car api",
+    "dongchedi api",
+    "che168 api",
+    "懂车帝 api",
+    "车168 api",
+    "chinese used car data",
+    "china car export",
+    "vehicle data api"
+  ],
   "homepage": "https://chinacarapi.com",
-  "repository": { "type": "git", "url": "git+https://github.com/ThatMojo/chinacarapi-node.git" },
-  "bugs": { "url": "https://chinacarapi.com" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThatMojo/chinacarapi-node.git"
+  },
+  "bugs": {
+    "url": "https://chinacarapi.com"
+  },
   "author": "ChinaCarAPI (https://chinacarapi.com)",
   "license": "MIT",
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "encarapi": "^1.0.0"
+  }
 }
