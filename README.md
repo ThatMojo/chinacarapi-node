@@ -1,6 +1,6 @@
 # ChinaCarAPI: Node.js client for Chinese car data (Dongchedi API, Che168 API)
 
-Official **Node.js / TypeScript client** for [ChinaCarAPI](https://chinacarapi.com), a REST
+Official **Node.js / TypeScript client** for [ChinaCarAPI](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node), a REST
 **China car API** for the Chinese used-car market. One API for **Dongchedi (懂车帝)** and
 **Che168 (车168, Autohome)**: 400,000+ listings with price, mileage, first registration, seller,
 photos, inspection reports (accident, flood, fire, EV battery), price history and export status.
@@ -10,7 +10,7 @@ Built for car exporters, importers, dealers and marketplaces that need reliable 
 without scrapers, captchas, proxies or Chinese-language parsing.
 
 > **A ChinaCarAPI key is required.** The API and its data are a paid service. This client only
-> works with a key from [chinacarapi.com](https://chinacarapi.com) (5-day trial available).
+> works with a key from [chinacarapi.com](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node) (5-day trial available).
 > EnCarAPI keys with the China add-on work as well.
 
 ## Install
@@ -46,7 +46,7 @@ const client = new ChinaCarAPI("YOUR_API_KEY"); // or set CHINACARAPI_KEY
 ```
 
 Without a valid key every call throws a `ChinaCarAPIError` pointing to
-[chinacarapi.com](https://chinacarapi.com). There is no free data in this package, only a clean
+[chinacarapi.com](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node). There is no free data in this package, only a clean
 client for the paid API.
 
 ## API
