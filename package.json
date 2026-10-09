@@ -1,6 +1,6 @@
 {
   "name": "chinacarapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Node.js client for ChinaCarAPI: Chinese used-car data from Dongchedi and Che168 in English. China entry point of the encarapi package.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -21,7 +21,7 @@
     "china car export",
     "vehicle data api"
   ],
-  "homepage": "https://chinacarapi.com",
+  "homepage": "https://chinacarapi.com/?utm_source=npm&utm_medium=chinacarapi-node",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThatMojo/chinacarapi-node.git"

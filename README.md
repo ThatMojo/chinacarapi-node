@@ -1,6 +1,6 @@
 # ChinaCarAPI: Node.js client for Chinese car data (Dongchedi API, Che168 API)
 
-Official **Node.js / TypeScript client** for [ChinaCarAPI](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node), a REST
+Official **Node.js / TypeScript client** for [ChinaCarAPI](https://chinacarapi.com/?utm_source=readme&utm_medium=chinacarapi-node), a REST
 **China car API** for the Chinese used-car market. One API for **Dongchedi (懂车帝)** and
 **Che168 (车168, Autohome)**: 400,000+ listings with price, mileage, first registration, seller,
 photos, inspection reports (accident, flood, fire, EV battery), price history and export status.
@@ -10,7 +10,7 @@ Built for car exporters, importers, dealers and marketplaces that need reliable 
 without scrapers, captchas, proxies or Chinese-language parsing.
 
 > **A ChinaCarAPI key is required.** The API and its data are a paid service. This client only
-> works with a key from [chinacarapi.com](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node) (5-day trial available).
+> works with a key from [chinacarapi.com](https://chinacarapi.com/?utm_source=readme&utm_medium=chinacarapi-node) (5-day trial available).
 > EnCarAPI keys with the China add-on work as well.
 
 ## Install
@@ -46,7 +46,7 @@ const client = new ChinaCarAPI("YOUR_API_KEY"); // or set CHINACARAPI_KEY
 ```
 
 Without a valid key every call throws a `ChinaCarAPIError` pointing to
-[chinacarapi.com](https://chinacarapi.com/?utm_source=github&utm_medium=sdk_node). There is no free data in this package, only a clean
+[chinacarapi.com](https://chinacarapi.com/?utm_source=readme&utm_medium=chinacarapi-node). There is no free data in this package, only a clean
 client for the paid API.
 
 ## API
@@ -67,7 +67,7 @@ client for the paid API.
 `mileage_max`, `city`, `fuel`, `has_report`, `export_ready` (China's 180-day rule for used-car
 exports), `updated_since`, `sort`, `page`, `limit`, `lang=zh` for the original Chinese values.
 
-Full reference (OpenAPI 3.1, 13 languages): [chinacarapi.com/documentation](https://chinacarapi.com/documentation)
+Full reference (OpenAPI 3.1, 13 languages): [chinacarapi.com/documentation](https://chinacarapi.com/documentation?utm_source=readme&utm_medium=chinacarapi-node)
 
 ## Keeping a local copy
 
@@ -84,7 +84,7 @@ const next = await client.changes({ cursor: first.nextCursor });
 - **Export status**: ready-made filter for China's 180-day rule on used-car exports.
 - **Plans from €99/month**, 5-day trial for €9.99. EnCarAPI (Korea) customers add China from €39/month.
 
-Korean car data: see [EnCarAPI](https://encarapi.com) and its [Node.js client](https://github.com/ThatMojo/encarapi-node).
+Korean car data: see [EnCarAPI](https://encarapi.com/?utm_source=readme&utm_medium=chinacarapi-node) and its [Node.js client](https://github.com/ThatMojo/encarapi-node).
 
 ## License
 
