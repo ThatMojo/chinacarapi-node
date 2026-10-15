@@ -56,6 +56,7 @@ client for the paid API.
 | `client.catalog(params?)` | `GET /api/catalog` | Search and filter listings (Dongchedi + Che168) |
 | `client.vehicle(id, params?)` | `GET /api/vehicle/:id` | Full record of one car |
 | `client.inspection(id, params?)` | `GET /api/inspection/:id` | Inspection report |
+| `client.specs(trimId)` | `GET /api/specs/:trimId` | Autohome trim sheet of a Che168 car (cc, kW, hp, torque, emission standard, weights, EV battery) |
 | `client.bulk(ids, params?)` | `POST /api/vehicle/bulk` | Up to 500 records per call |
 | `client.changes({ since \| cursor })` | `GET /api/catalog/changes` | Change feed: new cars, price changes, removals |
 | `client.exportCsv()` | `GET /api/catalog/export` | Full catalog as CSV |

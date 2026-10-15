@@ -1,6 +1,6 @@
 {
   "name": "chinacarapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official Node.js client for ChinaCarAPI: Chinese used-car data from Dongchedi and Che168 in English. China entry point of the encarapi package.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -35,6 +35,6 @@
     "node": ">=18"
   },
   "dependencies": {
-    "encarapi": "^1.0.0"
+    "encarapi": "^1.4.0"
   }
 }
