@@ -58,6 +58,7 @@ client for the paid API.
 | `client.vehicleByUrl(url, params?)` | `GET /api/vehicle/by-url` | Same record by Che168/Dongchedi listing link (desktop, mobile or app) |
 | `client.inspection(id, params?)` | `GET /api/inspection/:id` | Inspection report |
 | `client.specs(trimId, params?)` | `GET /api/specs/:trimId` | Autohome trim sheet of a Che168 car (cc, kW, hp, torque, emission standard, weights, EV battery) |
+| `client.specFields(params?)` | `GET /api/specs/fields` | Label, unit and group for every key of a record's `specs` object; `{ lang: "ru" }` or `"zh"` for Russian or Chinese |
 | `client.bulk(ids, params?)` | `POST /api/vehicle/bulk` | Up to 500 records per call |
 | `client.changes({ since \| cursor })` | `GET /api/catalog/changes` | Change feed: new cars, price changes, removals |
 | `client.exportCsv(params?)` | `GET /api/catalog/export` | Full catalog as CSV text |
@@ -74,7 +75,9 @@ exports), `updated_since`, `sort`, `page`, `limit`, `lang`.
 fields (fuel, transmission, drivetrain, colours, seller type, condition, vehicle class), city names and
 equipment names; make, model and trim names stay Latin. Works on `catalog`, `vehicle`, `vehicleByUrl`, `bulk`
 and `specs`. `enums({ lang: "ru" })` adds `nameRu` to fuels and cities, `exportCsv({ lang: "ru" })` and
-`exportToFile(path, { lang: "ru" })` return the label columns in Russian.
+`exportToFile(path, { lang: "ru" })` return the label columns in Russian. With `lang: "ru"` the text values of `specs` are Russian as well (energy type, transmission, drive, aspiration,
+body type, emission standard, warranties, motor and battery type); a value without a Russian term stays English.
+`specFields({ lang })` returns the label, unit and group of every `specs` key in English, Russian or Chinese.
 
 Full reference (OpenAPI 3.1, 13 languages): [chinacarapi.com/documentation](https://chinacarapi.com/documentation?utm_source=readme&utm_medium=chinacarapi-node)
 
